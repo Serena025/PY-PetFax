@@ -1,0 +1,109 @@
+/* VARIABLES */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@700&display=swap');
+:root {
+    /* fonts */ 
+    --header-font: 'Montserrat', sans-serif;
+    --accent-font: 'Roboto', sans-serif; 
+    --body-font: 'Roboto', sans-serif;
+    /* colors */ 
+    --light-accent: #F7F7F7; 
+    --main-accent: #5D737E;
+    --second-accent: #64C9CF;
+    --hover-accent: #D9BF77;
+}
+
+/* GENERAL */
+body {
+    background: var(--light-accent);
+    font-family: var(--body-font);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 2em;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+h1 {
+    margin-bottom: 1em;
+    color: var(--main-accent);
+    font-family: var(--header-font);
+    font-size: 3em;
+    text-align: center;
+}
+h2 {
+    color: var(--second-accent);
+    margin: 1em 0;
+}
+a {
+    font-family: var(--accent-font);
+    text-decoration: none;
+    color: var(--main-accent);
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: var(--hover-accent);
+}
+.callout {
+    background: #eee;
+    padding: 1em;
+    border-radius: 8px;
+    text-align: center;
+    font-family: var(--accent-font);
+    font-weight: 400;
+}
+
+/* PETS */ 
+.pets-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 1em 0;
+}
+.pets-container img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 0.5em;
+}
+.pet {
+    flex: 1;
+    margin: 0.5em;
+}
+
+/* FACTS */
+.facts-container {
+    margin-bottom: 1em;
+}
+input, textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+textarea {
+    resize: vertical;
+}
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--main-accent);
+}
+input[type="submit"] {
+    border: none;
+    background: var(--second-accent);
+    font-family: var(--header-font);
+    font-size: 1em;
+    color: whitesmoke;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+input[type="submit"]:hover {
+    background: var(--hover-accent);
+}
