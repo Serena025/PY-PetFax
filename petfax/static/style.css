@@ -6,10 +6,10 @@
     --accent-font: 'Roboto', sans-serif; 
     --body-font: 'Roboto', sans-serif;
     /* colors */ 
-    --light-accent: #F7F7F7; 
-    --main-accent: #5D737E;
-    --second-accent: #64C9CF;
-    --hover-accent: #D9BF77;
+    --light-accent: #E8F5E9; /* Light Green */
+    --main-accent: #66BB6A; /* Green */
+    --second-accent: #FFD54F; /* Yellow */
+    --hover-accent: #FFA726; /* Orange */
 }
 
 /* GENERAL */
@@ -49,12 +49,13 @@ a:hover {
     color: var(--hover-accent);
 }
 .callout {
-    background: #eee;
+    background: #F1F8E9; /* Very Light Green */
     padding: 1em;
     border-radius: 8px;
     text-align: center;
     font-family: var(--accent-font);
     font-weight: 400;
+    margin-top: 1em;
 }
 
 /* PETS */ 
@@ -81,7 +82,7 @@ a:hover {
 }
 input, textarea {
     width: 100%;
-    border: 1px solid #ddd;
+    border: 1px solid #C8E6C9; /* Lighter Green */
     border-radius: 8px;
     padding: 1em;
     box-sizing: border-box;
@@ -99,7 +100,7 @@ input[type="submit"] {
     background: var(--second-accent);
     font-family: var(--header-font);
     font-size: 1em;
-    color: whitesmoke;
+    color: #37474F; /* Dark Gray */
     padding: 0.5em 1em;
     cursor: pointer;
     transition: background 0.3s ease;
